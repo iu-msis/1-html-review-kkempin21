@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div class = "container">
+      <header class = "row">
+        <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1> Welcome to the first iteration of my Website!  </h1>
+        </div>
+      </header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="index.html" aria-current="page" href="#">Home/Index |</a>
+              </li>
+              <li class="nav-item">
+                <a class="tables.html" href="#">Tables | </a>
+              </li>
+              <li class="nav-item">
+                <a class="aboutme.html" href="#">| About me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="someApp" class="col col-8">
+      <ul>
+
+        <p> <a v-bind:href = "result.picture.large"> <img v-bind:src = "result.picture.large"/></a></p>
+        <p> Full Name: {{result.name.first+" "+result.name.last}}</a></p>
+        <p> Country of Origin: {{result.location.country}}</a></p>
+        <p> Date of Birth: {{prettyBirthday}}</a></p>
+        <p> Age: {{result.dob.age}}</a></p>
+        <p> <a href="mailto:someone@yoursite.com"> Email: {{result.email}}</a></p>
+        <form v-on:submit.prevent="fetchUserData">
+          <button type="submit">Reload</button>
+        </form>
+      </ul> 
+    </div>
+    
+      <!-- <nav class = "row navbar navbar-default">
+      
+       -->
+       
+      <!-- <a href ="index.html" class = "cool_navs"> Home | </a> 
+      <a href="about_us.html" class = "cool_navs"> About Us | </a> 
+      <a href="events.html" class = "cool_navs"> Events | </a> 
+      <a href="specials.html" class = "cool_navs"> Specials </a> 
+ -->
+
+
+
+      <!-- <div class = "collapse navbar-collapse" id="FCREMenu">
+            <ul class= "nav navbar-nav">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="tables.html"> Tables </a></li> 
+            -->
+            <!-- <li class="dropdown">
+              <a href="examples.html" class = "dropdown-toggle" data-toggle="dropdown">Examples <span class="caret"></span></a> -->
+              
+              
+            <!-- </li> 
+            <li><a href="about_us.html">About Us</a></li> 
+            <li class = "dropdown">
+              <a href="contact.html" class = "dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span> </a>
+              <ul class = "dropdown-menu">
+                <li><a href="page1.html"> Email </a></li>
+                <li><a href="page1.html"> Phone List </a></li>
+                <li><a href="page1.html"> Live Chat </a></li>
+              </ul> -->
+            </div>
+
+      </nav>
+
+
+
+
+
+      <main class = "row">
+        <div class = "col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <p> Welcome to my first website! On this website, I will be talking about myself and my interests. <strong> </strong> This website will consist of three different pages, with one being this introduction page, a page about me, and then a page about the Harry Potter Book Series, as well as a form to add a new book to the table. </p>
+
+        
+        <!-- <p> <q>Best group experience ever! Our clients loved it!</q> - Chase Bank </p>
+        <p> <q>By far the most exciting group event we've ever planned!</q> - Sprout Box </p> -->
+        
+
+
+        <!-- <div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h3> Why FCRE? </h3> 
+          </div>  -->
+         
+          
+      </main>
+      
+      <footer class = "row"> 
+      <hr>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="js/index.js"></script>
+    </body>
+</html>
