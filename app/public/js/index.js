@@ -1,4 +1,4 @@
-const SomeApp = {
+const someApp = {
     data() {
       return {
         result: {},
@@ -33,4 +33,4 @@ const SomeApp = {
 
   }
   
-  Vue.createApp(SomeApp).mount('#someApp');
+  Vue.createApp(someApp).mount('#someApp');
